@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:id="@+id/rl"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/acc"
+        android:text="Accelerometer Sensor"
+        android:textSize="30dp"
+
+        android:textColor="#000"/>
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/acc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="X_Value = 0.0"
+        android:textSize="30dp"
+        android:id="@+id/X_axis"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:id="@+id/Y_axis"
+        android:text="Y_Value = 0.0"
+        android:layout_below="@+id/X_axis"
+
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:id="@+id/Z_axis"
+        android:text="Z_Value = 0.0"
+        android:layout_below="@+id/Y_axis"
+
+        />
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/gyro"
+        android:text=" Gyroscope Sensor"
+        android:textSize="30dp"
+        android:layout_below="@id/Z_axis"
+        android:textColor="#000"/>
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/gyro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="X_Value = 0.0"
+        android:textSize="30dp"
+        android:id="@+id/GX"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:id="@+id/GY"
+        android:text="Y_Value = 0.0"
+        android:layout_below="@+id/GX"
+
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:id="@+id/GZ"
+        android:text="Z_Value = 0.0"
+        android:layout_below="@+id/GY"
+
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bluetooth"
+        android:id="@+id/blu"
+        android:layout_below="@+id/GZ"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:src="@drawable/smile1"/>
+
+
+
+
+</RelativeLayout>

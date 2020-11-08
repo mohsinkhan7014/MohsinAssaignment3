@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BlueTooth">
+
+    <Button
+        android:id="@+id/on"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="ON" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OFF"
+        android:id="@+id/off"
+        android:layout_toRightOf="@+id/on"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Paired"
+        android:layout_toRightOf="@+id/off"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/paired"
+        android:layout_marginTop="10dp"
+        />
+
+    <Button
+        android:id="@+id/find"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/paired"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="-288dp"
+        android:layout_marginTop="29dp"
+        android:layout_toRightOf="@+id/paired"
+        android:text="Search" />
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/on"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="39dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="24dp"
+        android:layout_toRightOf="@id/find"
+        android:textSize="10dp"
+        android:textColor="#000"
+        android:id="@+id/tv"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/find"
+        android:layout_marginTop="20dp"
+        android:id="@+id/lv"/>
+
+</RelativeLayout>
